@@ -1,0 +1,310 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>LobbyManager</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            PerudoOnline
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":server:dokkaHtmlPartial/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="server::org.perudo/LobbyManager///PointingToDeclaration//791161957">
+  <div class="breadcrumbs"><a href="../../index.html">server</a><span class="delimiter">/</span><a href="../index.html">org.perudo</a><span class="delimiter">/</span><span class="current">LobbyManager</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Lobby</span><wbr><span><span>Manager</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">LobbyManager</a><span class="clearfix"><span class="floating-right">(<a href="https://dvcs.apice.unibo.it/pika-lab/courses/ds/projects/ds-project-lumini-ay2223/-/blob/master//server/src/main/java/org/perudo/LobbyManager.java#L12">source</a>)</span></span></div><p class="paragraph">Menage connections witch clients</p><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-lobby-manager-impl/index.html">LobbyManagerImpl</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1900495677%2FFunctions%2F791161957" anchor-label="addLobby" id="1900495677%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-lobby.html"><span>add</span><wbr><span><span>Lobby</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1900495677%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-lobby.html"><span class="token function">addLobby</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lobby<span class="token operator">: </span><a href="../../../client/org.perudo/-lobby/index.html">Lobby</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Add a new lobby</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1542553354%2FFunctions%2F791161957" anchor-label="addRoomUser" id="1542553354%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-room-user.html"><span>add</span><wbr><span>Room</span><wbr><span><span>User</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1542553354%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-room-user.html"><span class="token function">addRoomUser</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">user<span class="token operator">: </span><a href="../../../client/org.perudo/-user/index.html">User</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Add user to room users list</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2028983198%2FFunctions%2F791161957" anchor-label="getAllSockets" id="2028983198%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-all-sockets.html"><span>get</span><wbr><span>All</span><wbr><span><span>Sockets</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2028983198%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-all-sockets.html"><span class="token function">getAllSockets</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html">Socket</a><span class="token operator">&gt;</span></div><div class="brief ">Get sockets af all clients connected to server</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="368896699%2FFunctions%2F791161957" anchor-label="getLobbiesInfo" id="368896699%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-lobbies-info.html"><span>get</span><wbr><span>Lobbies</span><wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="368896699%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-lobbies-info.html"><span class="token function">getLobbiesInfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="../../../common/org.perudo.info/-lobby-info/index.html">LobbyInfo</a><span class="token operator">&gt;</span></div><div class="brief ">Get information on all available lobbies</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-541076415%2FFunctions%2F791161957" anchor-label="getLobbiesSocket" id="-541076415%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-lobbies-socket.html"><span>get</span><wbr><span>Lobbies</span><wbr><span><span>Socket</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-541076415%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-lobbies-socket.html"><span class="token function">getLobbiesSocket</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lobbyId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html">Optional</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html">Socket</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief ">Get sockets of all clients connected to a specific lobby</div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-lobbies-socket.html"><span class="token function">getLobbiesSocket</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lobbyId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">socket<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html">Socket</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html">Optional</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html">Socket</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief ">Get sockets of all clients connected to a specific lobby except the one specified</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1759594914%2FFunctions%2F791161957" anchor-label="getLobbyById" id="-1759594914%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-lobby-by-id.html"><span>get</span><wbr><span>Lobby</span><wbr><span>By</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1759594914%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-lobby-by-id.html"><span class="token function">getLobbyById</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lobbyId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html">Optional</a><span class="token operator">&lt;</span><a href="../../../client/org.perudo/-lobby/index.html">Lobby</a><span class="token operator">&gt;</span></div><div class="brief ">Get a lobby by specifying its id</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1061811531%2FFunctions%2F791161957" anchor-label="getLobbyBySocket" id="-1061811531%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-lobby-by-socket.html"><span>get</span><wbr><span>Lobby</span><wbr><span>By</span><wbr><span><span>Socket</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1061811531%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-lobby-by-socket.html"><span class="token function">getLobbyBySocket</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">socket<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html">Socket</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html">Optional</a><span class="token operator">&lt;</span><a href="../../../client/org.perudo/-lobby/index.html">Lobby</a><span class="token operator">&gt;</span></div><div class="brief ">Get a lobby by specifying the socket of a client inside it</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2146029804%2FFunctions%2F791161957" anchor-label="getRoomsAndLobbiesSockets" id="-2146029804%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-rooms-and-lobbies-sockets.html"><span>get</span><wbr><span>Rooms</span><wbr><span>And</span><wbr><span>Lobbies</span><wbr><span><span>Sockets</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2146029804%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-rooms-and-lobbies-sockets.html"><span class="token function">getRoomsAndLobbiesSockets</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lobbyId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">socket<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html">Socket</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html">Socket</a><span class="token operator">&gt;</span></div><div class="brief ">Get all sockets of rooms users and of all clients connected to a specific lobby except the one specified</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="493875558%2FFunctions%2F791161957" anchor-label="getRoomSockets" id="493875558%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-room-sockets.html"><span>get</span><wbr><span>Room</span><wbr><span><span>Sockets</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="493875558%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-room-sockets.html"><span class="token function">getRoomSockets</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html">Socket</a><span class="token operator">&gt;</span></div><div class="brief ">Get sockets of all clients in room</div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-room-sockets.html"><span class="token function">getRoomSockets</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">socket<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html">Socket</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html">Socket</a><span class="token operator">&gt;</span></div><div class="brief ">Get sockets of all clients in room except the one specified</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-733678898%2FFunctions%2F791161957" anchor-label="getRoomUserById" id="-733678898%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-room-user-by-id.html"><span>get</span><wbr><span>Room</span><wbr><span>User</span><wbr><span>By</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-733678898%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-room-user-by-id.html"><span class="token function">getRoomUserById</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">userId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html">Optional</a><span class="token operator">&lt;</span><a href="../../../client/org.perudo/-user/index.html">User</a><span class="token operator">&gt;</span></div><div class="brief ">Get a room user by is id</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-669720053%2FFunctions%2F791161957" anchor-label="isLobbyAlreadyExisting" id="-669720053%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-lobby-already-existing.html"><span>is</span><wbr><span>Lobby</span><wbr><span>Already</span><wbr><span><span>Existing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-669720053%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-lobby-already-existing.html"><span class="token function">isLobbyAlreadyExisting</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Check if lobby name is already existing</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-278215028%2FFunctions%2F791161957" anchor-label="removeLobby" id="-278215028%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-lobby.html"><span>remove</span><wbr><span><span>Lobby</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-278215028%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-lobby.html"><span class="token function">removeLobby</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lobby<span class="token operator">: </span><a href="../../../client/org.perudo/-lobby/index.html">Lobby</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Remove a lobby</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="46742941%2FFunctions%2F791161957" anchor-label="removeRoomSocket" id="46742941%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-room-socket.html"><span>remove</span><wbr><span>Room</span><wbr><span><span>Socket</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="46742941%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-room-socket.html"><span class="token function">removeRoomSocket</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">socket<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html">Socket</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Remove a client's connection socket</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="291858661%2FFunctions%2F791161957" anchor-label="userExitLobby" id="291858661%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="user-exit-lobby.html"><span>user</span><wbr><span>Exit</span><wbr><span><span>Lobby</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="291858661%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="user-exit-lobby.html"><span class="token function">userExitLobby</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lobby<span class="token operator">: </span><a href="../../../client/org.perudo/-lobby/index.html">Lobby</a><span class="token punctuation">, </span></span><span class="parameter ">userId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Call when a user exit from a lobby</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-250349837%2FFunctions%2F791161957" anchor-label="userJoinedLobby" id="-250349837%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="user-joined-lobby.html"><span>user</span><wbr><span>Joined</span><wbr><span><span>Lobby</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-250349837%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="user-joined-lobby.html"><span class="token function">userJoinedLobby</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lobby<span class="token operator">: </span><a href="../../../client/org.perudo/-lobby/index.html">Lobby</a><span class="token punctuation">, </span></span><span class="parameter ">joiner<span class="token operator">: </span><a href="../../../client/org.perudo/-user/index.html">User</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Call when a user join a lobby</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

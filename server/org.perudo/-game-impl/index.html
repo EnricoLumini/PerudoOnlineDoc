@@ -1,0 +1,408 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>GameImpl</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            PerudoOnline
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":server:dokkaHtmlPartial/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="server::org.perudo/GameImpl///PointingToDeclaration//791161957">
+  <div class="breadcrumbs"><a href="../../index.html">server</a><span class="delimiter">/</span><a href="../index.html">org.perudo</a><span class="delimiter">/</span><span class="current">GameImpl</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Game</span><wbr><span><span>Impl</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">GameImpl</a> : <a href="../-game/index.html">Game</a><span class="clearfix"><span class="floating-right">(<a href="https://dvcs.apice.unibo.it/pika-lab/courses/ds/projects/ds-project-lumini-ay2223/-/blob/master//server/src/main/java/org/perudo/GameImpl.java#L11">source</a>)</span></span></div><p class="paragraph">The basic implementation of a Game</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="963432635%2FConstructors%2F791161957" anchor-label="GameImpl" id="963432635%2FConstructors%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-game-impl.html"><span>Game</span><wbr><span><span>Impl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="963432635%2FConstructors%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gameLobby<span class="token operator">: </span><a href="../../../client/org.perudo/-lobby/index.html">Lobby</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Create a game</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-153495596%2FProperties%2F791161957" anchor-label="gameLobby" id="-153495596%2FProperties%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="game-lobby.html"><span>game</span><wbr><span><span>Lobby</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-153495596%2FProperties%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="game-lobby.html">gameLobby</a><span class="token operator">: </span><a href="../../../client/org.perudo/-lobby/index.html">Lobby</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-317383489%2FProperties%2F791161957" anchor-label="turnUserId" id="-317383489%2FProperties%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="turn-user-id.html"><span>turn</span><wbr><span>User</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-317383489%2FProperties%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="turn-user-id.html">turnUserId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1135325034%2FFunctions%2F791161957" anchor-label="areAllDicesValuesReceived" id="-1135325034%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="are-all-dices-values-received.html"><span>are</span><wbr><span>All</span><wbr><span>Dices</span><wbr><span>Values</span><wbr><span><span>Received</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1135325034%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="are-all-dices-values-received.html"><span class="token function">areAllDicesValuesReceived</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Test if all players send their dices values</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1061403932%2FFunctions%2F791161957" anchor-label="areAllPlayersReady" id="-1061403932%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="are-all-players-ready.html"><span>are</span><wbr><span>All</span><wbr><span>Players</span><wbr><span><span>Ready</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1061403932%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="are-all-players-ready.html"><span class="token function">areAllPlayersReady</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Test if all players are ready to continue after a dudo</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="136172200%2FFunctions%2F791161957" anchor-label="assignPlayerDices" id="136172200%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="assign-player-dices.html"><span>assign</span><wbr><span>Player</span><wbr><span><span>Dices</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="136172200%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="assign-player-dices.html"><span class="token function">assignPlayerDices</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">dicesValues<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html">Integer</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Assign dices to specific player</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="378230560%2FFunctions%2F791161957" anchor-label="assignRandomColors" id="378230560%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="assign-random-colors.html"><span>assign</span><wbr><span>Random</span><wbr><span><span>Colors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="378230560%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="assign-random-colors.html"><span class="token function">assignRandomColors</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Assign random colors to players</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1747227427%2FFunctions%2F791161957" anchor-label="checkIfPalifico" id="-1747227427%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="check-if-palifico.html"><span>check</span><wbr><span>If</span><wbr><span><span>Palifico</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1747227427%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="check-if-palifico.html"><span class="token function">checkIfPalifico</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">userId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Check if user is palifico and handle it internally</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1562590273%2FFunctions%2F791161957" anchor-label="getOrderedPlayersInfo" id="1562590273%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-ordered-players-info.html"><span>get</span><wbr><span>Ordered</span><wbr><span>Players</span><wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1562590273%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-ordered-players-info.html"><span class="token function">getOrderedPlayersInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">order<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html">Integer</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="../../../common/org.perudo.info/-player-info/index.html">PlayerInfo</a><span class="token operator">&gt;</span></div><div class="brief ">Get player information by specified order</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1621710200%2FFunctions%2F791161957" anchor-label="getPlayersDices" id="-1621710200%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-players-dices.html"><span>get</span><wbr><span>Players</span><wbr><span><span>Dices</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1621710200%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-players-dices.html"><span class="token function">getPlayersDices</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html">Map</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html">Integer</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief ">Get dices of all players</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2136058113%2FFunctions%2F791161957" anchor-label="getPlayersDicesNumber" id="-2136058113%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-players-dices-number.html"><span>get</span><wbr><span>Players</span><wbr><span>Dices</span><wbr><span><span>Number</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2136058113%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-players-dices-number.html"><span class="token function">getPlayersDicesNumber</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html">Map</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html">Socket</a><span class="token punctuation">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html">Integer</a><span class="token operator">&gt;</span></div><div class="brief ">Get the number of dices of all players</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1151659988%2FFunctions%2F791161957" anchor-label="getPrevTurnUserId" id="-1151659988%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-prev-turn-user-id.html"><span>get</span><wbr><span>Prev</span><wbr><span>Turn</span><wbr><span>User</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1151659988%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-prev-turn-user-id.html"><span class="token function">getPrevTurnUserId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief ">Get the id of the previous round user</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1440572611%2FFunctions%2F791161957" anchor-label="getWinner" id="1440572611%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-winner.html"><span>get</span><wbr><span><span>Winner</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1440572611%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-winner.html"><span class="token function">getWinner</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html">Optional</a><span class="token operator">&lt;</span><a href="../../../client/org.perudo/-user/index.html">User</a><span class="token operator">&gt;</span></div><div class="brief ">Get winner, if present</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1580243028%2FFunctions%2F791161957" anchor-label="handleDudo" id="1580243028%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="handle-dudo.html"><span>handle</span><wbr><span><span>Dudo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1580243028%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="handle-dudo.html"><span class="token function">handleDudo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientSocket<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html">Socket</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html">Optional</a><span class="token operator">&lt;</span><a href="../../../client/org.perudo/-user/index.html">User</a><span class="token operator">&gt;</span></div><div class="brief ">Check if dudo is true or not, using the current bet</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2021548846%2FFunctions%2F791161957" anchor-label="isDudoTrue" id="2021548846%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-dudo-true.html"><span>is</span><wbr><span>Dudo</span><wbr><span><span>True</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2021548846%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-dudo-true.html"><span class="token function">isDudoTrue</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Check if dudo is correct</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1515554430%2FFunctions%2F791161957" anchor-label="isPlayerOut" id="1515554430%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-player-out.html"><span>is</span><wbr><span>Player</span><wbr><span><span>Out</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1515554430%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-player-out.html"><span class="token function">isPlayerOut</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">userId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Check if a player is out from the match</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1401765886%2FFunctions%2F791161957" anchor-label="isTurnPalifico" id="1401765886%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-turn-palifico.html"><span>is</span><wbr><span>Turn</span><wbr><span><span>Palifico</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1401765886%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-turn-palifico.html"><span class="token function">isTurnPalifico</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Check if turn is palifico</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1975492342%2FFunctions%2F791161957" anchor-label="newPlayerIsReady" id="-1975492342%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="new-player-is-ready.html"><span>new</span><wbr><span>Player</span><wbr><span>Is</span><wbr><span><span>Ready</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1975492342%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="new-player-is-ready.html"><span class="token function">newPlayerIsReady</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Call when a new user has confirmed the view of dices after a dudo</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="172356172%2FFunctions%2F791161957" anchor-label="nextTurnUserId" id="172356172%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="next-turn-user-id.html"><span>next</span><wbr><span>Turn</span><wbr><span>User</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="172356172%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="next-turn-user-id.html"><span class="token function">nextTurnUserId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief ">Get the id of the next round user</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1604673118%2FFunctions%2F791161957" anchor-label="playerLostADice" id="1604673118%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="player-lost-a-dice.html"><span>player</span><wbr><span>Lost</span><wbr><span><span>ADice</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1604673118%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="player-lost-a-dice.html"><span class="token function">playerLostADice</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">userId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Call when a user lose a dice</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="255183918%2FFunctions%2F791161957" anchor-label="setCurrentBet" id="255183918%2FFunctions%2F791161957" data-filterable-set=":server:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":server:dokkaHtmlPartial/main" data-filterable-set=":server:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-current-bet.html"><span>set</span><wbr><span>Current</span><wbr><span><span>Bet</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="255183918%2FFunctions%2F791161957"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":server:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-current-bet.html"><span class="token function">setCurrentBet</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">currentBet<span class="token operator">: </span><a href="../../../client/org.perudo/-bet/index.html">Bet</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Set the current bet</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
